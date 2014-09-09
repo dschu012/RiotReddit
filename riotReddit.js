@@ -31,7 +31,7 @@ var riotPosts = document.body.querySelectorAll('.noncollapsed .flair-riot');
 if(riotPosts.length > 0) {
 	//there are riot posts
 	for(var i = 0; i < riotPosts.length; i++) {
-		var post = getRiotPost(i), prev = getRiotPost(i-1), next = getRiotPost(i+1);
+		var post = getRiotPost(i);
 		if(post != null) {
 			if(i === 0) {
 				var commentsArea = document.body.querySelector('.nestedlisting');
