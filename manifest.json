@@ -1,0 +1,23 @@
+{
+  "name": "Riot Reddit",
+  "description": "Add support to navigate through comments left by Rioter's on /r/leagueoflegends much like the system used on Riot's forums",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+	    "http://reddit.com/r/leagueoflegends/*",
+		"https://reddit.com/r/leagueoflegends/*",
+		"http://*.reddit.com/r/leagueoflegends/*",
+		"https://*.reddit.com/r/leagueoflegends/*"
+      ],
+	  "js": [
+		"riotReddit.js"
+	  ],
+	  "run_at": "document_end"
+    }
+  ],
+  "version": "1.0",
+  "manifest_version": 2
+}
